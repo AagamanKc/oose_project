@@ -25,13 +25,12 @@ class UserSerializer(serializers.ModelSerializer):
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField()
-
     def validate(self, data):
         try:
             user = Users.objects.get(email=data['email'])
         except Users.DoesNotExist:
             raise serializers.ValidationError("User not found!")
-        # Check if the password matches
+        # Check if the password matche
         if not user.check_password(data['password']):
             raise serializers.ValidationError("Incorrect password!")
         return data
