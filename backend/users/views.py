@@ -13,6 +13,7 @@ class Register(APIView):
     permission_classes = [AllowAny]  # ✅ This allows public access to login
     def post(self, request):
         data = request.data
+        print(data)
         serializer = RegisterSerializer(data=data)
         if not serializer.is_valid():
             return Response({
@@ -29,6 +30,7 @@ class Login(APIView):
     permission_classes = [AllowAny]  # ✅ This allows public access to login
     def post(self, request):
         data = request.data
+        print(data)
         serializer = LoginSerializer(data = data)
         if not serializer.is_valid():
             return Response({
@@ -37,6 +39,7 @@ class Login(APIView):
                 },status= status.HTTP_400_BAD_REQUEST)
         # Access the user object from validated data
         user = serializer.validated_data['user']
+        print(user)
         
         # Generate a refresh token and an access token
         refresh = RefreshToken.for_user(user)

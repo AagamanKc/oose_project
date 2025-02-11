@@ -10,6 +10,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         # Hash the password before saving
         password = validated_data.pop('password')  # Remove password from validated_data
         user = Users(**validated_data)  # Create the user instance without password
+        print(user)
         user.set_password(password)  # Hash the password
         user.save()  # Save the user instance with hashed password
         return user
