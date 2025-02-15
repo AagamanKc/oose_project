@@ -42,6 +42,8 @@ const Register = () => {
   };
 
   return (
+    <>
+    <div className="background">
     <div className="wrapper">
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
@@ -112,6 +114,8 @@ const Register = () => {
         </div>
       </form>
     </div>
+    </div>
+    </>
   );
 };
 

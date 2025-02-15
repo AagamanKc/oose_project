@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@ body {
   background: url("https://img.freepik.com/free-vector/flat-design-forest-landscape_23-2149155031.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .wrapper {
   position: relative;

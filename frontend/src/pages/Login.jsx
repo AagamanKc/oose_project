@@ -60,6 +60,8 @@ const Login = () => {
   };
 
   return (
+    <>
+    <div className="background">
     <div className="wrapper">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
@@ -114,6 +116,9 @@ const Login = () => {
         </div>
       </form>
     </div>
+    </div>
+    </>
+    
   );
 };
 
