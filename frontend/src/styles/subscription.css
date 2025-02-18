@@ -1,0 +1,52 @@
+/* Subscription Page Styles */
+.subscription {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .plan-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .selected {
+    border-color: #e50914;
+    background-color: #f2f2f2;
+  }
+  
+  .btn-pay {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .btn-pay:hover {
+    background-color: #b40611;
+  }
+  
