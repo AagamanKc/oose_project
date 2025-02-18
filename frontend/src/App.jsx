@@ -20,25 +20,25 @@ function RegisterAndLogout() {
 function App() {
   console.log("App component rendered")
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route
-    //       path="/"
-    //       element={
-    //         <ProtectedRoute>
-    //         // this will check if we have access token or not.
-    //         // if not, it will naviaget us to login automatically
-    //           <Home />
-    //         </ProtectedRoute>
-    //       }
-    //     />
-    //     <Route path="/login" element={<Login />} />
-    //     <Route path="/logout" element={<Logout />} />
-    //     <Route path="/register" element={<RegisterAndLogout />} />
-    //     <Route path="*" element={<NotFound />}></Route>
-    //   </Routes>
-    // </BrowserRouter>
-    <Header/>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+            // this will check if we have access token or not.
+            // if not, it will naviaget us to login automatically
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/register" element={<RegisterAndLogout />} />
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 
