@@ -1,0 +1,77 @@
+/* All Movies Page Styles */
+.all-movies {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .category-filter {
+    margin-bottom: 20px;
+  }
+  
+  .category-filter label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .category-filter select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Movie Grid */
+  .movie-grid {
+    margin-top: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .movie-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .movie-info p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .movie-link {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .movie-link:hover {
+    text-decoration: underline;
+  }
+  
