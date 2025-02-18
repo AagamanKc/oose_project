@@ -1,0 +1,65 @@
+/* Header Layout */
+.header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+    display: inline-block;
+  }
+  
+  /* Navigation Menu */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation li {
+    display: inline;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: #e50914;
+  }
+  
+  /* Login Button */
+  .btn-login {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #f40612;
+  }
+  
