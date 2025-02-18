@@ -16,6 +16,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         return user
     
 class LoginSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True)  # Ensure the password is write-only
     class Meta:
         model = Users
         fields = ['email', 'password']
@@ -24,10 +25,12 @@ class LoginSerializer(serializers.ModelSerializer):
         try:
             # Try to get the user by email
             user = Users.objects.get(email=data['email'])
+            print("User found:", user)
         except Users.DoesNotExist:
             raise serializers.ValidationError("User not found!")
         # Check if the password matches
         if not user.check_password(data['password']):
+            print("Password does not match")
             raise serializers.ValidationError("Incorrect password!")
         # Return the user object in the validated data (you can add it if needed)
         data['user'] = user  # Optionally, you can return the user object for token creation
