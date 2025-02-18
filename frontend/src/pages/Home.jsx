@@ -1,11 +1,17 @@
-import '../styles/home.css';
+import React from 'react'
+import Header from '../components/Header'
 
-
-function Home() {
-    console.log("home component rendered")
-    return <div>
-        <h1>Home page</h1>
-    </div>
+const Home = () => {
+  return (
+    <>
+    
+    <div>Hello</div>
+    
+    </>
+  )
 }
 
 export default Home
+
+
+
