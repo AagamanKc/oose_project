@@ -26,8 +26,6 @@ function App() {
           path="/"
           element={
             <ProtectedRoute>
-            // this will check if we have access token or not.
-            // if not, it will naviaget us to login automatically
               <Home />
             </ProtectedRoute>
           }
